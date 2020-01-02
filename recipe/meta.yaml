@@ -10,7 +10,7 @@ source:
   sha256: 5b57180d22ca6a00627fea501fae3e291ca04976b65747c7fe22cb8afb70f08e
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - stdpopsim=stdpopsim.cli:stdpopsim_main
@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - msprime
-    - attrs
+    - msprime >=0.7.1
+    - attrs >=18.2.0
     - appdirs
     - humanize
 

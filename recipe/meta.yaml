@@ -1,5 +1,5 @@
 {% set name = "stdpopsim" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4783bca9d7a1f8dabd4a165542edd9166367f15417aaa3b994a60165982b3d8
+  sha256: a9ec4f3f63322a2414f1bb566899ba7f8ae0fc25de776102b27c5ffc98f83249
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - stdpopsim=stdpopsim.cli:stdpopsim_main
   noarch: python
@@ -40,7 +40,7 @@ about:
   license: GPLv3+
   license_family: GPL
   license_file: LICENSE
-  summary: 'A community-maintained standard library of population genetic simulations'
+  summary: A community-maintained standard library of population genetic simulations
   description: |
     Stdpopsim provides a standard library of population genetic simulations, based 
     around a catalog of species definitions, empirical genetic maps and demograpic

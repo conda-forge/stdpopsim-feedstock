@@ -25,7 +25,8 @@ requirements:
   run:
     - python >=3.6
     - msprime >=0.7.1
-    - attrs >=18.2.0
+    - attrs >=19.1.0
+    - pyslim >=0.401
     - appdirs
     - humanize
 
@@ -42,7 +43,7 @@ about:
   license_file: LICENSE
   summary: A community-maintained standard library of population genetic simulations
   description: |
-    Stdpopsim provides a standard library of population genetic simulations, based 
+    Stdpopsim provides a standard library of population genetic simulations, based
     around a catalog of species definitions, empirical genetic maps and demograpic
     models.
   doc_url: http://stdpopsim.readthedocs.io/

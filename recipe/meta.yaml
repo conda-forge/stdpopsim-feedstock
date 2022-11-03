@@ -1,5 +1,5 @@
 {% set name = "stdpopsim" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9ec4f3f63322a2414f1bb566899ba7f8ae0fc25de776102b27c5ffc98f83249
+  sha256: 1ad76257ff3a75eac7f5a696405f14bbabb1fcda783beaa9db716995dac8f5a7
 
 build:
   number: 0

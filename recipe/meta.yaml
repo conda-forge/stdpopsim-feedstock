@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/popsim-consortium/stdpopsim
-  license: GPLv3+
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: A community-maintained standard library of population genetic simulations
@@ -46,7 +46,7 @@ about:
     Stdpopsim provides a standard library of population genetic simulations, based
     around a catalog of species definitions, empirical genetic maps and demograpic
     models.
-  doc_url: http://stdpopsim.readthedocs.io/
+  doc_url: https://popsim-consortium.github.io/stdpopsim-docs/
   dev_url: https://github.com/popsim-consortium/stdpopsim
 
 extra:

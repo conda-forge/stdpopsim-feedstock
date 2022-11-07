@@ -10,7 +10,7 @@ source:
   sha256: a9ec4f3f63322a2414f1bb566899ba7f8ae0fc25de776102b27c5ffc98f83249
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - stdpopsim=stdpopsim.cli:stdpopsim_main
@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://github.com/popsim-consortium/stdpopsim
-  license: GPLv3+
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: A community-maintained standard library of population genetic simulations
@@ -46,9 +46,10 @@ about:
     Stdpopsim provides a standard library of population genetic simulations, based
     around a catalog of species definitions, empirical genetic maps and demograpic
     models.
-  doc_url: http://stdpopsim.readthedocs.io/
+  doc_url: https://popsim-consortium.github.io/stdpopsim-docs/
   dev_url: https://github.com/popsim-consortium/stdpopsim
 
 extra:
   recipe-maintainers:
     - jeromekelleher
+    - petrelharp

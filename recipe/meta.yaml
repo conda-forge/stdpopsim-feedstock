@@ -29,10 +29,14 @@ requirements:
     - pyslim >=1.0.1
     - appdirs
     - humanize
-    - pandas
-    - zarr
     - numpy
     - slim
+    # Note: these three dependencies will probably be removed soon
+    # https://github.com/popsim-consortium/stdpopsim/issues/1412
+    # https://github.com/popsim-consortium/stdpopsim/pull/1416
+    - pandas
+    - zarr
+    - scipy
 
 test:
   commands:

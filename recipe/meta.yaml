@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1ad76257ff3a75eac7f5a696405f14bbabb1fcda783beaa9db716995dac8f5a7
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - stdpopsim=stdpopsim.cli:stdpopsim_main
@@ -20,10 +20,10 @@ requirements:
   host:
     - setuptools
     - setuptools_scm
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - msprime >=1.0.4
     - attrs >=19.1.0
     - pyslim >=1.0.1
@@ -39,6 +39,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - stdpopsim -h
   imports:
